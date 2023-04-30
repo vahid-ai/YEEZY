@@ -24,13 +24,11 @@ const LOCATIONS = [
 	{
 		name: "Los Angeles",
 		address: `55°31'24.0"N 9°11'50.0"E`,
-		exits: 4214,
 		coordinates: [-118.2437, 34.0522],
 	},
 	{
 		name: "UK London",
 		address: `55°31'24.0"N 9°11'50.0"E`,
-		exits: 4214,
 		coordinates: [-0.116773, 51.510357],
 	},
 ];
@@ -148,7 +146,7 @@ const sampleIcon = new IconLayer({
 		"https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.png",
 	iconMapping: ICON_MAPPING,
 	getIcon: (d) => "marker",
-	sizeScale: 4,
+	sizeScale: 5,
 	getPosition: (d) => d.coordinates,
 	getSize: (d) => 5,
 	// getColor: (d) => [229, 218, 183],
@@ -160,32 +158,43 @@ const sampleIcon = new IconLayer({
 export default function Map() {
 	const layers = [sampleIcon];
 	return (
-		<DeckGL
-			layers={layers}
-			initialViewState={INITIAL_VIEW_STATE}
-			controller={true}
-			getTooltip={({ object }) =>
-				object && {
-					html: `<div>${object.name}</div><div>${object.address}</div>`,
-					style: {
-						color: "white",
-						// color: "#e7e2bf",
-						// color: "#FF0000",
-						backgroundColor: "rgba(0, 0, 0)",
-						borderColor: "#e7e2bf",
-						"border-width": "100px",
-						fontSize: "14.667px",
-						padding: "20px 50px",
-						borderRadius: "8px",
-						"font-family": "CustomFontRoman",
-					},
-				}
-			}
+		<div
+			style={{
+				height: "50vh",
+				width: "100vw",
+				position: "relative",
+				left: "0px",
+				bottom: "0px",
+				marginBottom: "0px",
+			}}
 		>
-			<StaticMap
-				mapStyle={carto_dark_matter_nolabels}
-				mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
-			/>
-		</DeckGL>
+			<DeckGL
+				layers={layers}
+				initialViewState={INITIAL_VIEW_STATE}
+				controller={true}
+				getTooltip={({ object }) =>
+					object && {
+						html: `<div>${object.name}</div><div>${object.address}</div>`,
+						style: {
+							color: "white",
+							// color: "#e7e2bf",
+							// color: "#FF0000",
+							backgroundColor: "rgba(0, 0, 0)",
+							borderColor: "#e7e2bf",
+							"border-width": "100px",
+							fontSize: "14.667px",
+							padding: "20px 25px",
+							borderRadius: "8px",
+							"font-family": "CustomFontRoman",
+						},
+					}
+				}
+			>
+				<StaticMap
+					mapStyle={carto_dark_matter_nolabels}
+					mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
+				/>
+			</DeckGL>
+		</div>
 	);
 }
