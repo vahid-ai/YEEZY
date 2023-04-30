@@ -48,3 +48,19 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "CustomFont2"; /*Can be any text*/
+	src: local("FoundationSansBlack"),
+		url("./fonts/FoundationSansBlack.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CustomFont3"; /*Can be any text*/
+	src: local("FoundationSansLight"),
+		url("./fonts/FoundationSansLight.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}

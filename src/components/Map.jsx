@@ -17,7 +17,7 @@ const INITIAL_VIEW_STATE = {
 };
 
 const ICON_MAPPING = {
-	marker: { x: 0, y: 0, width: 128, height: 128, mask: true },
+	marker: { x: 128, y: 0, width: 128, height: 128, mask: true },
 };
 
 const LOCATIONS = [
@@ -136,7 +136,8 @@ const yeezyIconLayer = new IconLayer({
 	getIcon: (d) => "yeezyLocationPin",
 	getSize: (d) => 5,
 	getColor: (d) => [255, 140, 0],
-	getIconOffsets: (d) => [0, -128],
+	// getColor: (d) => [254, 0, 0],
+	// getIconOffsets: (d) => [0, 128],
 });
 
 const sampleIcon = new IconLayer({
@@ -147,10 +148,12 @@ const sampleIcon = new IconLayer({
 		"https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.png",
 	iconMapping: ICON_MAPPING,
 	getIcon: (d) => "marker",
-	sizeScale: 8,
+	sizeScale: 4,
 	getPosition: (d) => d.coordinates,
 	getSize: (d) => 5,
-	getColor: (d) => [231, 226, 191],
+	getColor: (d) => [229, 218, 183],
+	// getColor: (d) => [231, 226, 191],
+	// getColor: (d) => [254, 0, 0], // red
 	getPixelOffset: (d) => [0, -32],
 });
 
@@ -166,11 +169,12 @@ export default function Map() {
 					html: `<div>${object.name}</div><div>${object.address}</div>`,
 					style: {
 						color: "#e7e2bf",
+						// color: "#FF0000",
 						backgroundColor: "rgba(0, 0, 0)",
 						fontSize: "14.667px",
 						padding: "20px 50px",
 						borderRadius: "8px",
-						"font-family": "CustomFont",
+						"font-family": "CustomFont3",
 					},
 				}
 			}
