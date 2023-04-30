@@ -16,15 +16,6 @@ const INITIAL_VIEW_STATE = {
 	bearing: 0,
 };
 
-// const INITIAL_VIEW_STATE = {
-// 	longitude: -122.466233,
-// 	latitude: 37.684638,
-// 	zoom: 18,
-// 	maxZoom: 15,
-// 	pitch: 0,
-// 	bearing: 0,
-// };
-
 const ICON_MAPPING = {
 	marker: { x: 0, y: 0, width: 128, height: 128, mask: true },
 };
@@ -127,8 +118,6 @@ const locationData = [
 // 	latitude: coordinates[1],
 // }));
 
-console.log({ locationData });
-
 const yeezyIconLayer = new IconLayer({
 	id: "yeezy-icon-layer",
 	data: LOCATIONS, // Your location data
@@ -154,8 +143,6 @@ const sampleIcon = new IconLayer({
 	id: "icon-layer",
 	data: LOCATIONS,
 	pickable: true,
-	// iconAtlas and iconMapping are required
-	// getIcon: return a string
 	iconAtlas:
 		"https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.png",
 	iconMapping: ICON_MAPPING,
@@ -166,10 +153,6 @@ const sampleIcon = new IconLayer({
 	getColor: (d) => [231, 226, 191],
 	getPixelOffset: (d) => [0, -32],
 });
-
-{
-	/* <div id="tooltip" style="position: absolute; z-index: 100; background-color: rgba(0, 0, 0, 0.8); color: white; padding: 8px; border-radius: 4px; pointer-events: none; display: none;"></div> */
-}
 
 export default function Map() {
 	const layers = [sampleIcon];
@@ -185,8 +168,6 @@ export default function Map() {
 						color: "#e7e2bf",
 						backgroundColor: "rgba(0, 0, 0)",
 						fontSize: "14.667px",
-						// paddingBottom: "20px",
-						// paddingTop: "20px",
 						padding: "20px 50px",
 						borderRadius: "8px",
 					},
@@ -194,8 +175,6 @@ export default function Map() {
 			}
 		>
 			<StaticMap
-				// mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-				// mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json"
 				mapStyle={carto_dark_matter_nolabels}
 				mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
 			/>
