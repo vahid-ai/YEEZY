@@ -151,9 +151,9 @@ const sampleIcon = new IconLayer({
 	sizeScale: 4,
 	getPosition: (d) => d.coordinates,
 	getSize: (d) => 5,
-	getColor: (d) => [229, 218, 183],
+	// getColor: (d) => [229, 218, 183],
 	// getColor: (d) => [231, 226, 191],
-	// getColor: (d) => [254, 0, 0], // red
+	getColor: (d) => [254, 0, 0], // red
 	getPixelOffset: (d) => [0, -32],
 });
 
@@ -171,10 +171,12 @@ export default function Map() {
 						color: "#e7e2bf",
 						// color: "#FF0000",
 						backgroundColor: "rgba(0, 0, 0)",
+						borderColor: "#e7e2bf",
+						"border-width": "100px",
 						fontSize: "14.667px",
 						padding: "20px 50px",
 						borderRadius: "8px",
-						"font-family": "CustomFont3",
+						"font-family": "CustomFontRoman",
 					},
 				}
 			}

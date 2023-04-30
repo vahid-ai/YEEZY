@@ -64,3 +64,11 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "CustomFontRoman"; /*Can be any text*/
+	src: local("FoundationSansRoman"),
+		url("./fonts/FoundationSansRoman.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
