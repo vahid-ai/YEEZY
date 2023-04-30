@@ -170,6 +170,7 @@ export default function Map() {
 						fontSize: "14.667px",
 						padding: "20px 50px",
 						borderRadius: "8px",
+						"font-family": "CustomFont",
 					},
 				}
 			}
