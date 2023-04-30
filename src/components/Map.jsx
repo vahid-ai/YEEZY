@@ -168,7 +168,8 @@ export default function Map() {
 				object && {
 					html: `<div>${object.name}</div><div>${object.address}</div>`,
 					style: {
-						color: "#e7e2bf",
+						color: "white",
+						// color: "#e7e2bf",
 						// color: "#FF0000",
 						backgroundColor: "rgba(0, 0, 0)",
 						borderColor: "#e7e2bf",
