@@ -58,7 +58,10 @@ const LOCATIONS = [
 
 export default function ListPlaces() {
 	return (
-		<div style={{ position: "absolute", left: "20px", top: "120px" }}>
+		<div
+			style={{ position: "absolute", left: "20px", top: "120px" }}
+			className="background-set"
+		>
 			<div className="yeezy-text">yzy</div>
 			<div className="yeezy-text">casting</div>
 			<div className="yeezy-text">beings</div>

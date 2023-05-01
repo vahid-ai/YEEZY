@@ -1,0 +1,9 @@
+:root {
+	--background-color: #ffffff; /* Replace with your preferred background color */
+	--text-color: #000000; /* Replace with your preferred text color */
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
