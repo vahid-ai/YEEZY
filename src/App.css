@@ -5,6 +5,9 @@
 	text-align: center;
 } */
 
+.body {
+	background-color: white;
+}
 .globe-loader {
 	position: relative;
 	width: 200px;
