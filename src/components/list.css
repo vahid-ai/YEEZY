@@ -1,6 +1,7 @@
 .yeezy-text {
 	font-family: "CustomFontRoman";
-	color: "black";
+	background-color: var(--background-color);
+	color: var(--text-color);
 	text-align: left;
 	line-height: 1.2;
 	font-size: "14.667px";
@@ -8,19 +9,22 @@
 
 .yeezy-text2 {
 	font-family: "CustomFont3";
-	color: "black";
+	background-color: var(--background-color);
+	color: var(--text-color);
 	text-align: left;
 }
 
 .yeezy-text3 {
 	font-family: "CustomFont2";
-	color: "black";
+	background-color: var(--background-color);
+	color: var(--text-color);
 	text-align: left;
 }
 
 .yeezy-text4 {
 	font-family: "CustomFont";
-	color: "black";
+	background-color: var(--background-color);
+	color: var(--text-color);
 	text-align: left;
 }
 
