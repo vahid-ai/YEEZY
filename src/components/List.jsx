@@ -130,7 +130,7 @@ export default function ListPlaces() {
 	return (
 		<div style={{ position: "absolute", left: "10px", top: "10px" }}>
 			{LOCATIONS.map((location) => (
-				<div key={location.name} style={{ marginBottom: "30px" }}>
+				<div key={location.name} style={{ marginBottom: "50px" }}>
 					<div className="yeezy-text">yzy</div>
 					<div className="yeezy-text">casting</div>
 					<div className="yeezy-text">{location.place}</div>
