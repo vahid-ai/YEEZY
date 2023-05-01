@@ -56,9 +56,18 @@ const LOCATIONS = [
 	},
 ];
 
-export default function ListPlaces() {
+export default function GlobeList() {
 	return (
 		<div style={{ position: "absolute", left: "20px", top: "120px" }}>
+			<div className="globe-loader">
+				<div
+					className="earth"
+					// style={{ backgroundImage: `url(${earthImage})` }}
+					style={{
+						backgroundImage: `url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg)`,
+					}}
+				></div>
+			</div>
 			<div className="yeezy-text">yzy</div>
 			<div className="yeezy-text">casting</div>
 			<div className="yeezy-text">beings</div>
