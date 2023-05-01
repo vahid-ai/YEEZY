@@ -9,6 +9,7 @@ import Map from "./components/Map";
 import ListPlaces from "./components/List";
 import ListPlaces2 from "./components/List2";
 import ListPlaces3 from "./components/List3";
+import ListPlaces4 from "./components/List4";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route exact path="/" component={ListPlaces} />
 					<Route exact path="/SansLight" component={ListPlaces2} />
 					<Route exact path="/SansBlack" component={ListPlaces3} />
+					<Route exact path="/SansBlackCdIt" component={ListPlaces4} />
 					<Route path="/map" component={Map} />
 				</Switch>
 			</Router>

@@ -40,15 +40,21 @@ const LOCATIONS = [
 	},
 ];
 
-export default function ListPlaces() {
+export default function ListPlaces3() {
 	return (
-		<div style={{ position: "absolute", left: "10px", top: "10px" }}>
+		<div style={{ position: "absolute", left: "20px", top: "30px" }}>
 			{LOCATIONS.map((location) => (
-				<div key={location.name} style={{ marginBottom: "10px" }}>
+				<div key={location.name} style={{ marginBottom: "50px" }}>
 					<div className="yeezy-text3">yzy</div>
 					<div className="yeezy-text3">casting</div>
+					<div className="yeezy-text3">part 3 4</div>
+					<div className="yeezy-text3">beings</div>
+					<div className="yeezy-text3">with</div>
+					<div className="yeezy-text3">shaved</div>
+					<div className="yeezy-text3">heads</div>
 					<div className="yeezy-text3">{location.place}</div>
 					<div className="yeezy-text3">{location.date}</div>
+					<div className="yeezy-text3">{location.time}</div>
 					<div className="yeezy-text3">{location.address}</div>
 				</div>
 			))}

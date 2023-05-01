@@ -40,22 +40,22 @@ const LOCATIONS = [
 	},
 ];
 
-export default function ListPlaces2() {
+export default function ListPlaces4() {
 	return (
 		<div style={{ position: "absolute", left: "20px", top: "30px" }}>
 			{LOCATIONS.map((location) => (
 				<div key={location.name} style={{ marginBottom: "50px" }}>
-					<div className="yeezy-text2">yzy</div>
-					<div className="yeezy-text2">casting</div>
-					<div className="yeezy-text2">part 3 4</div>
-					<div className="yeezy-text2">beings</div>
-					<div className="yeezy-text2">with</div>
-					<div className="yeezy-text2">shaved</div>
-					<div className="yeezy-text2">heads</div>
-					<div className="yeezy-text2">{location.place}</div>
-					<div className="yeezy-text2">{location.date}</div>
-					<div className="yeezy-text2">{location.time}</div>
-					<div className="yeezy-text2">{location.address}</div>
+					<div className="yeezy-text4">yzy</div>
+					<div className="yeezy-text4">casting</div>
+					<div className="yeezy-text4">part 4 4</div>
+					<div className="yeezy-text4">beings</div>
+					<div className="yeezy-text4">with</div>
+					<div className="yeezy-text4">shaved</div>
+					<div className="yeezy-text4">heads</div>
+					<div className="yeezy-text4">{location.place}</div>
+					<div className="yeezy-text4">{location.date}</div>
+					<div className="yeezy-text4">{location.time}</div>
+					<div className="yeezy-text4">{location.address}</div>
 				</div>
 			))}
 		</div>

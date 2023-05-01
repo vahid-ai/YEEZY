@@ -2,7 +2,7 @@
 	font-family: "CustomFontRoman";
 	color: "black";
 	text-align: left;
-	line-height: 2;
+	line-height: 1.2;
 	font-size: "14.667px";
 }
 
@@ -14,6 +14,12 @@
 
 .yeezy-text3 {
 	font-family: "CustomFont2";
+	color: "black";
+	text-align: left;
+}
+
+.yeezy-text4 {
+	font-family: "CustomFont";
 	color: "black";
 	text-align: left;
 }
