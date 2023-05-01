@@ -1,6 +1,7 @@
 import React from "react";
 import "./list.css";
 
+import earthImage from "../assets/globe.png";
 import Map from "./Map";
 
 const LOCATIONS = [
@@ -58,6 +59,12 @@ const LOCATIONS = [
 export default function ListPlaces() {
 	return (
 		<div style={{ position: "absolute", left: "20px", top: "120px" }}>
+			{/* <div className="globe-loader">
+				<div
+					className="earth"
+					style={{ backgroundImage: `url(${earthImage})` }}
+				></div>
+			</div> */}
 			<div className="yeezy-text">yzy</div>
 			<div className="yeezy-text">casting</div>
 			<div className="yeezy-text">beings</div>
