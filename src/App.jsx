@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "./components/Navbar";
 import Map from "./components/Map";
+import GlobeList from "./components/GlobeList";
 import ListPlaces from "./components/List";
 import ListPlaces2 from "./components/List2";
 import ListPlaces3 from "./components/List3";
@@ -18,6 +19,7 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={ListPlaces} />
 					<Route exact path="/alt" component={ListPlaces2} />
+					<Route exact path="/globe" component={GlobeList} />
 					<Route path="/map" component={Map} />
 				</Switch>
 			</Router>

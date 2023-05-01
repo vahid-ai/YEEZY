@@ -56,9 +56,9 @@ const LOCATIONS = [
 	},
 ];
 
-export default function GlobeList() {
+export default function ListPlaces() {
 	return (
-		<div style={{ position: "absolute", left: "20px", top: "120px" }}>
+		<div style={{ position: "absolute", left: "20px", top: "50px" }}>
 			<div className="globe-loader">
 				<div
 					className="earth"
