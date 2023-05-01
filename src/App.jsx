@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
-import "./colorOverrides.css";
 import "./fonts/FoundationSansBlackCdIt.otf";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -20,8 +19,8 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={ListPlaces} />
 					<Route exact path="/alt" component={ListPlaces2} />
-					<Route exact path="/globe" component={GlobeList} />
-					<Route path="/map" component={Map} />
+					{/* <Route exact path="/globe" component={GlobeList} />
+					<Route path="/map" component={Map} /> */}
 				</Switch>
 			</Router>
 
