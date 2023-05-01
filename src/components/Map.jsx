@@ -27,6 +27,11 @@ const LOCATIONS = [
 		coordinates: [-118.2437, 34.0522],
 	},
 	{
+		name: "Chicago",
+		address: `55°31'24.0"N 9°11'50.0"E`,
+		coordinates: [-87.623177, 41.881832],
+	},
+	{
 		name: "UK London",
 		address: `55°31'24.0"N 9°11'50.0"E`,
 		coordinates: [-0.116773, 51.510357],
@@ -152,22 +157,23 @@ const sampleIcon = new IconLayer({
 	// getColor: (d) => [229, 218, 183],
 	// getColor: (d) => [231, 226, 191],
 	getColor: (d) => [254, 0, 0], // red
-	getPixelOffset: (d) => [0, -32],
+	getPixelOffset: (d) => [-10, -20],
 });
 
 export default function Map() {
 	const layers = [sampleIcon];
 	return (
-		<div
-			style={{
-				height: "50vh",
-				width: "100vw",
-				position: "relative",
-				left: "0px",
-				bottom: "0px",
-				marginBottom: "0px",
-			}}
-		>
+		// <div
+		// 	style={{
+		// 		height: "50vh",
+		// 		width: "100vw",
+		// 		position: "relative",
+		// 		left: "0px",
+		// 		bottom: "0px",
+		// 		marginBottom: "0px",
+		// 	}}
+		// >
+		<div>
 			<DeckGL
 				layers={layers}
 				initialViewState={INITIAL_VIEW_STATE}
