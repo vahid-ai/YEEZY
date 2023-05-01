@@ -38,6 +38,12 @@ const LOCATIONS = [
 		date: "4 30 23",
 		coordinates: [-0.116773, 51.510357],
 	},
+	{
+		place: "rome",
+		address: `41°53'56.1"N 12°28'23.2"E`,
+		date: "5 14 23",
+		coordinates: [-0.116773, 51.510357],
+	},
 ];
 
 const testing = [
@@ -124,7 +130,7 @@ export default function ListPlaces() {
 	return (
 		<div style={{ position: "absolute", left: "10px", top: "10px" }}>
 			{LOCATIONS.map((location) => (
-				<div key={location.name} style={{ marginBottom: "10px" }}>
+				<div key={location.name} style={{ marginBottom: "30px" }}>
 					<div className="yeezy-text">yzy</div>
 					<div className="yeezy-text">casting</div>
 					<div className="yeezy-text">{location.place}</div>
