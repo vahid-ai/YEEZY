@@ -17,9 +17,7 @@ function App() {
 			<Router>
 				<Switch>
 					<Route exact path="/" component={ListPlaces} />
-					<Route exact path="/SansLight" component={ListPlaces2} />
-					<Route exact path="/SansBlack" component={ListPlaces3} />
-					<Route exact path="/SansBlackCdIt" component={ListPlaces4} />
+					<Route exact path="/alt" component={ListPlaces2} />
 					<Route path="/map" component={Map} />
 				</Switch>
 			</Router>
