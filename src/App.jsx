@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
+import "./colorOverrides.css";
 import "./fonts/FoundationSansBlackCdIt.otf";
 import { Analytics } from "@vercel/analytics/react";
 
