@@ -135,16 +135,17 @@ tokyo
 // }
 export default function ListPlaces() {
 	return (
-		<div style={{ position: "absolute", left: "20px", top: "30px" }}>
+		<div style={{ position: "absolute", left: "20px", top: "120px" }}>
 			{LOCATIONS.map((location) => (
-				<div key={location.name} style={{ marginBottom: "50px" }}>
+				<div key={location.name} style={{ marginBottom: "120px" }}>
 					<div className="yeezy-text">yzy</div>
 					<div className="yeezy-text">casting</div>
-					<div className="yeezy-text">part 3 4</div>
 					<div className="yeezy-text">beings</div>
 					<div className="yeezy-text">with</div>
 					<div className="yeezy-text">shaved</div>
-					<div className="yeezy-text">heads</div>
+					<div style={{ marginBottom: "60px" }} className="yeezy-text">
+						heads
+					</div>
 					<div className="yeezy-text">{location.place}</div>
 					<div className="yeezy-text">{location.date}</div>
 					<div className="yeezy-text">{location.time}</div>
