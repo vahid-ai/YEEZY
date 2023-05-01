@@ -71,7 +71,11 @@ export default function ListPlaces() {
 				heads
 			</div>
 			{LOCATIONS.map((location) => (
-				<div key={location.name} style={{ marginBottom: "120px" }}>
+				<div
+					key={location.name}
+					style={{ marginBottom: "120px" }}
+					className="yeezy-text"
+				>
 					<div className="yeezy-text">{location.address}</div>
 					<div className="yeezy-text">{location.date}</div>
 					<div className="yeezy-text">{location.time}</div>
