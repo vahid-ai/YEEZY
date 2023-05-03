@@ -59,7 +59,7 @@ const LOCATIONS = [
 export default function ListPlaces() {
 	return (
 		<div
-			style={{ position: "absolute", left: "20px", top: "120px" }}
+			style={{ position: "absolute", left: "20px", top: "50px" }}
 			className="background-set"
 		>
 			<div className="yeezy-text">yzy</div>
@@ -67,13 +67,13 @@ export default function ListPlaces() {
 			<div className="yeezy-text">beings</div>
 			<div className="yeezy-text">with</div>
 			<div className="yeezy-text">shaved</div>
-			<div style={{ marginBottom: "120px" }} className="yeezy-text">
+			<div style={{ marginBottom: "50px" }} className="yeezy-text">
 				heads
 			</div>
 			{LOCATIONS.map((location) => (
 				<div
 					key={location.name}
-					style={{ marginBottom: "120px" }}
+					style={{ marginBottom: "50px" }}
 					className="yeezy-text"
 				>
 					<div className="yeezy-text">{location.address}</div>

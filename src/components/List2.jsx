@@ -57,17 +57,17 @@ const LOCATIONS = [
 
 export default function ListPlaces() {
 	return (
-		<div style={{ position: "absolute", left: "20px", top: "120px" }}>
+		<div style={{ position: "absolute", left: "20px", top: "50px" }}>
 			<div className="yeezy-text">yzy</div>
 			<div className="yeezy-text">casting</div>
 			<div className="yeezy-text">beings</div>
 			<div className="yeezy-text">with</div>
 			<div className="yeezy-text">shaved</div>
-			<div style={{ marginBottom: "140px" }} className="yeezy-text">
+			<div style={{ marginBottom: "50px" }} className="yeezy-text">
 				heads
 			</div>
 			{LOCATIONS.map((location) => (
-				<div key={location.name} style={{ marginBottom: "140px" }}>
+				<div key={location.name} style={{ marginBottom: "50px" }}>
 					<div className="yeezy-text">{location.address}</div>
 					<div className="yeezy-text">{location.date}</div>
 					<div className="yeezy-text">{location.time}</div>
