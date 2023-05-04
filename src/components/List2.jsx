@@ -127,7 +127,6 @@ let outStr = pString.split("#");
 let newCoords2 = outStr.map((elm) => {
 	let tmp = elm.split(/\r?\n/).slice(1, 4);
 	let coords = tmp[0].split(",");
-	console.log({ tmp });
 	return {
 		address: tmp[0],
 		longitude: coords[0],
