@@ -4,7 +4,14 @@
 	color: var(--text-color);
 	text-align: left;
 	line-height: 1.2;
-	font-size: "100px";
+}
+
+.city {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	text-align: left;
+	line-height: 1.2;
+	margin-right: 10px;
 }
 
 .yeezy-text2 {
