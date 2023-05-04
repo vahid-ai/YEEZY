@@ -18,7 +18,7 @@ function App() {
 			<Router>
 				<Switch>
 					<Route exact path="/" component={ListPlaces} />
-					<Route exact path="/testing/location" component={ListPlaces2} />
+					<Route exact path="/location" component={ListPlaces2} />
 					{/* <Route exact path="/globe" component={GlobeList} />
 					<Route path="/map" component={Map} /> */}
 				</Switch>
